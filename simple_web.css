@@ -1,0 +1,140 @@
+body {
+    background: linear-gradient(
+        to bottom,
+        black 0%,
+        black 40%,
+        #95D600 40%,
+        #95D600 100%
+    );
+    color: white;
+    margin: 50px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+}
+
+
+
+.first{
+    flex: 1;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Aboreto", system-ui;
+    font-size: 3rem;
+}
+h2 {
+    font-family: "Rye", serif;
+    color:  #95D600;
+}
+
+.side > img {
+    margin-bottom: 250px;
+}
+
+p {
+    font-family: "Anta", sans-serif;
+}
+
+.side {
+    width: 50%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.drink {
+    height: 250px;
+    float: left;
+    margin-right: 20px;
+}
+
+.black {
+    color: black;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 100px;
+}
+
+#end {
+    text-align: center;
+    position: relative;
+    left: 250px;
+    bottom: 200px;
+    font-size: larger;
+}
+
+.second {
+    margin-top: 100px;
+    flex: 1;
+}
+footer > p {
+    text-align: right;
+    color: black;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@media (max-width: 680px) {
+    
+    body {
+        background: linear-gradient(
+            black 0%,
+            black 60%,
+            #95D600 60%  
+        );
+    }
+    
+    p {
+        font-size: smaller;
+        padding-bottom: 250px;
+    }
+    .side {
+        display: block;
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+    .side > .drink {
+        width: 100%;
+        display: inline;
+        object-fit: contain;
+        margin: 0%;
+    }
+
+    #end {
+        text-align: start;
+        position: static;
+        margin-top: 0%;
+    }
+    .bottom {
+        width: 400px;
+
+    }
+    .bottom > img {
+        width: 400px;
+        margin-bottom: 0%;
+
+    }
+    footer {
+        text-align: right;
+    }
+    .black {
+        margin-top: 200px;
+    }
+}
